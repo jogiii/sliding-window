@@ -41,6 +41,9 @@ public class Stocks {
 
         // Test Case 4: Single price, no transaction possible
         int[] prices4 = {5};
+        System.out.println("Test 4: " + solution.maxProfit(prices4)); // 0
     }
+
+    
     
 }
