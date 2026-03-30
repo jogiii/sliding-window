@@ -24,6 +24,23 @@ public class Stocks {
     }
 
 
+    public int maxProfit2(int[] prices){
+        int minPrice = prices[0];
+        int maxProfit =0;
+
+        for(int i=0;i<prices.length;i++){
+            if(prices[i]<minPrice){
+                minPrice = prices[i];
+            }else{
+                int profit = prices[i]-minPrice;
+                maxProfit = Math.max(maxProfit, profit);
+            }
+        }
+
+        return maxProfit;
+    }
+
+
     public static void main(String[] args) {
         Stocks solution = new Stocks();
 
